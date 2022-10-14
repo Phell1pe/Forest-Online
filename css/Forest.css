@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'japan';
+    src: url('../fonts/fonte-meio/Japan\ wave.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/paragrafos/Louis\ George\ Cafe\ Light\ Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url('../fonts/menu/Cinzel-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'argue';
+    src: url('../fonts/paragrafos/Argue\ DEMO.otf') format('OpenType');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-image: url('../img/background/floresta.jpg');
+    background-repeat: no-repeat;
+    background-size: 130%;
+    overflow: hidden;
+
+}
+
+
+                /* Header */
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+
+}
+
+.logoArvore {
+    width: 70px;
+    margin-right: 150px;
+}
+
+#menu-Base {
+    display: flex;
+    gap: 37px;
+}
+
+#menu-cima {
+    font-family: 'apple';
+    font-size: 19px;
+    text-decoration: overline;
+    color: rgb(112, 64, 31);
+    transition: 0.6s;
+}
+
+#menu-cima:hover {
+    color: rgb(34, 58, 70);
+    font-size: 20px;
+    margin-top: 8px;
+    text-shadow: 1px 1px 5px rgb(119, 76, 36);
+
+}
+
+            /* Main */
+
+.conteudo {
+    border-top: 0.5px rgb(77, 61, 31) solid;
+    margin-bottom: 48px;
+}
+
+
+        /* Section */
+
+.conteudo-princi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}        
+
+.conteudo-imagem {
+    height: 423px;
+}
+
+.conteudo-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo-h1 {
+    font-family: 'Japan';
+    font-size: 31px;
+    text-decoration: overline;
+    color: rgb(63, 40, 13);
+    text-shadow: 1px 2px 6px rgb(102, 76, 28);
+}
+
+.conteudo-h2 {
+    font-family: 'japan';
+    color: rgb(61, 46, 18);
+}
+
+.conteudo-botao {
+    width: 150px;
+    margin-left: 30px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Louis';
+    text-shadow: 1px 2px 3px black;
+    box-shadow: 1px 2px 6px rgb(95, 69, 30);
+    border: 2px solid rgb(87, 57, 30);
+    transition: 0.5s;
+    background-color: rgb(90, 72, 34);
+}
+
+.conteudo-botao:hover {
+    width: 164px;
+    height: 47px;
+    border-radius: 30px;
+    transition: 0.5s;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+
+}
+
+.conteudo-secundario {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    font-family: 'argue';
+
+}
+
+.paragrafo-prima {
+    border-top: 0.4px solid black;
+    padding-top: 40px;
+    color: rgb(87, 66, 31);
+    text-shadow: 1px 2px 6px rgb(107, 76, 29);
+    font-weight: 600;
+}
+
+.paragrafo-secund { 
+    text-shadow: 1px 2px 5px black;
+}
